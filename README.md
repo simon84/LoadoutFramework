@@ -60,7 +60,7 @@ By inheriting the `Collection`-class (`class MyLoadout : Collection`), you can d
 
 Additional, you can aggregate sub-collections. Maybe you want to have a medical backpack and some weapons with a predefined magazine loadout, you can create some sub-collections which can be added to your unit-loadout.
 ```
-class Weapon_MX : Collection { // idially added to cfgTemplates.hpp but not necessary
+class Weapon_MX : Collection { // ideally added to cfgTemplates.hpp but not necessary
 	primaryWeapon[] = {"arifle_MX_F"};
 	primaryWeaponOptic[]={"optic_Aco"};
 	primaryWeaponLoadedMagazine[]={"30Rnd_65x39_caseless_mag"};
