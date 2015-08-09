@@ -93,5 +93,7 @@ As shown in this example, you can simply overwrite certain properties (primary w
 
 #### Applying the Loadout
 The function `BG_fnc_applyLoadout` applies the loadout to a unit.
+
 Syntax: `[<unit>,<loadoutName>] call BG_fnc_applyLoadout;`
-Note: <unit> has to be local!
+
+Note: `<unit>` has to be local!
