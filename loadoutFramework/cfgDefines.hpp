@@ -22,6 +22,7 @@ class Collection {
 	handgunBarrel[] = {};
 	handgunResting[] = {};
 	handgunLoadedMagazine[] = {};
+	binocular[] = {};
 	magazines[] = {};
 	items[] = {};
 	itemsUniform[] = {};

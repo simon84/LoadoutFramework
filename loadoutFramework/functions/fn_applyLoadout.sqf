@@ -13,7 +13,7 @@ if (!isClass _loadout) exitWith {};
 private ['_classes','_properties','_ind','_name'];
 
 _properties = configProperties [_loadout,'isArray _x'];
-_classes = 'true' configClasses _loadout;
+_classes = configProperties [_loadout,'isClass _x'];
 
 {
 	_name = (configName _x);
@@ -28,8 +28,6 @@ _classes = 'true' configClasses _loadout;
 {
 	[[],_x,_loadoutArray] call BG_fnc_applyLoadout;
 } count _classes;
-
-
 
 if (!_isRoot) exitWith{};
 
@@ -91,7 +89,7 @@ if ((count _items) > 0) then {
 		_item = _items select (floor random (count _items));
 		_obj addWeapon _item;
 	};
-} count ['primaryWeapon','secondaryWeapon','handgun'];
+} count ['primaryWeapon','secondaryWeapon','handgun','binocular'];
 
 // Primary Weapon Items
 {
