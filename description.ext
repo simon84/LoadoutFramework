@@ -1,0 +1,6 @@
+
+#include "loadoutFramework\base.hpp"
+
+class CfgFunctions {
+	#include "loadoutFramework\cfgFunctions.hpp"
+};
