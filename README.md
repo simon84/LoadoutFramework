@@ -43,6 +43,7 @@ class Collection {
 	handgunMuzzle[]={};
 	handgunBarrel[] = {};
 	handgunLoadedMagazine[] = {};
+	binocular[] = {};
 	magazines[] = {}; // all magazines which can be stored in uniform, vest or backpack depending on space. E.g. {{"30Rnd_65x39_caseless_mag_Tracer",3},{"30Rnd_65x39_caseless_mag",6}}; for 3x 30 Rnd 6.5x39mm caseless Tracer and 6x 30 Rnd 6.5x39mm caseless magazines
 	items[] = {}; // all other items (magazines are also possible) which can be stored in uniform, vest or backpack depending on space. Same definition like magazines[].
 	itemsUniform[] = {}; // all items (magazines are also possible) which have to be stored in uniform. Same definition like magazines[].
