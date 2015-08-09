@@ -121,20 +121,6 @@ if ((count _items) > 0) then {
 	};
 } count ['handgunOptic','handgunMuzzle','handgunBarrel','handgunResting','handgunLoadedMagazine'];
 
-
-// Magazines
-_ind = _loadoutArray find 'magazines';
-_items = _loadoutArray select (_ind+1);
-{
-	if (typeName _x == 'ARRAY') then {
-		_obj addMagazines _x;
-	};
-	if (typeName _x == 'STRING') then {
-		_obj addMagazine _x;
-	};
-
-} count _items;
-
 // Items to Uniform
 _ind = _loadoutArray find 'itemsUniform';
 _items = _loadoutArray select (_ind+1);
@@ -175,6 +161,34 @@ _items = _loadoutArray select (_ind+1);
 	if (typeName _x == 'STRING') then {
 		_obj addItemToBackpack _x;
 	};
+} count _items;
+
+// Magazines
+_ind = _loadoutArray find 'magazines';
+_items = _loadoutArray select (_ind+1);
+{
+	if (typeName _x == 'ARRAY') then {
+		_obj addMagazines _x;
+	};
+	if (typeName _x == 'STRING') then {
+		_obj addMagazine _x;
+	};
+
+} count _items;
+
+// Items
+_ind = _loadoutArray find 'items';
+_items = _loadoutArray select (_ind+1);
+{
+	if (typeName _x == 'ARRAY') then {
+		for "_i" from 1 to (_x select 1) do {
+		    _obj addItem (_x select 0);
+		};
+	};
+	if (typeName _x == 'STRING') then {
+		_obj addItem _x;
+	};
+
 } count _items;
 
 // Linked Items
