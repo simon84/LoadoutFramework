@@ -58,7 +58,7 @@ Every property is defined as an array. This allows the user to define multiple e
 
 By inheriting the `Collection`-class (`class MyLoadout : Collection`), you can define your custom loadout by filling the properties. As class inheritance is possible, you can define additional loadouts based on other loadouts. 
 
-Additional, you can aggregate subloadouts. Maybe you want to have a medical backpack and some weapons with a predefined magazine loadout, you can create some sub-loadouts or sub-collections which can be added to your unit-loadout.
+Additional, you can aggregate sub-collections. Maybe you want to have a medical backpack and some weapons with a predefined magazine loadout, you can create some sub-collections which can be added to your unit-loadout.
 ```
 class Weapon_MX : Collection { // idially added to cfgTemplates.hpp but not necessary
 	primaryWeapon[] = {"arifle_MX_F"};
