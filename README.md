@@ -52,7 +52,7 @@ class Collection {
 	script[]={};// A script which is executed after applying loadout.
 };
 ```
-Every property is defined as an array. This allows the user to define multiple e.g. uniforms. The system chooses than one uniform randomly.
+Every property is defined as an array. This allows the user to define multiple e.g. uniforms. The system chooses then one uniform randomly.
 
 #### Custom Loadout
 
