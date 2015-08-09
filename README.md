@@ -90,6 +90,8 @@ class Rifleman : Collection {
 ```
 As shown in this example, you can simply overwrite certain properties (primary weapon was changed to iron sight), if you wish to change the loadout for some loadouts.
 
+Sub-collections which are not usable standalone, should be created in the `cfgTemplates.hpp`-file.
+
 
 #### Applying the Loadout
 The function `BG_fnc_applyLoadout` applies the loadout to a unit.
