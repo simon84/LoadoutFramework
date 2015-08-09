@@ -8,10 +8,10 @@ This script based approach uses config class definitions as loadout definitions.
 1. Copy the `loadoutFramework` folder to your mission folder
 2. Edit your `description.ext` and include following:
 ```
-#include "loadoutFramework/base.hpp"
+#include "loadoutFramework\base.hpp"
 
 class CfgFunctions {
-	#include "loadoutFramework/cfgFunctions.hpp"
+	#include "loadoutFramework\cfgFunctions.hpp"
 };
 ```
 
