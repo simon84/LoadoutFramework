@@ -1,5 +1,5 @@
 # LoadoutFramework
-The LoadoutFramework simplifies the creation of unit loadouts in Arma 3.
+The [LoadoutFramework](https://github.com/simon84/LoadoutFramework) simplifies the creation of unit loadouts in Arma 3.
 
 This script based approach uses config class definitions as loadout definitions. Due to this technique, class inheritance is possible and simplifies the mission editors life.
 
